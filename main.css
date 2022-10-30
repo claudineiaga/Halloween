@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Creepster&display=swap");
+
+body{
+    background: linear-gradient(to left,
+    black, rgb(50, 2, 46), rgb(2, 56, 2));
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+h1{
+    color: white;
+    font-size: 40px;
+    margin-top: 150px;
+    position: absolute;
+    font-family: 'Creepster', cursive;
+    letter-spacing: 4px;
+}
+#container{
+    width: 400px;
+    height: 400px;
+    padding: 0;
+    box-sizing: border-box;
+}
+.abobora{
+    width: 15em;
+    height: 11em;
+    background: #f68632;
+    border: 0.4em solid #a14907;
+    border-radius: 45%;
+    position: relative;
+    z-index: 1;
+    animation: flutuar 3s infinite;
+}
+@keyframes flutuar {
+    0%,100%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-10%);
+    }
+}
+.abobora .raiz{
+    background: green;
+    width: 1.25em;
+    height: 2.8em;
+    position: absolute;
+    left: calc(7.5em - 0.6253em);
+    top: -2.7em;
+    transform: rotate(5deg);
+    border-radius: 30% 20% 70% 10%;
+}
+.abobora .olho-esquerdo{
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 0.8em solid transparent;
+    top: 2.8em;
+    left: 3.7em;
+    transform: rotate(-30deg);
+    border-bottom: 2.1em solid transparent;
+    border-right: 2.4em solid #401d03;
+}
+.abobora .olho-direito{
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 0.8em solid transparent;
+    top: 2.8em;
+    right: 3.7em;
+    transform: rotate(30deg);
+    border-bottom: 2.1em solid transparent;
+    border-left: 2.4em solid #401d03;
+}
+.abobora .boca-esquerda{
+    width: 4em;
+    height: 2em;
+    position: absolute;
+    bottom: 1.5em;
+    border-bottom: 1em solid #401d03;
+    left: 3.6em;
+    border-radius: 0 0 0 100%;
+}
+.abobora .boca-direita{
+    width: 4em;
+    height: 2em;
+    position: absolute;
+    bottom: 1.5em;
+    border-bottom: 1em solid #401d03;
+    right: 3.6em;
+    border-radius: 0 0 100% 0;
+}
+.sombra{
+    margin: 10% auto 0;
+    background: #000;
+    width: 230px;
+    height: 50px;
+    border-radius: 50%;
+    animation: zomm 3s infinite;
+}
+@keyframes zomm {
+    0%, 100%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(0.8);
+    }
+}
